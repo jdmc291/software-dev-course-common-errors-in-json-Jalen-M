@@ -44,30 +44,29 @@ but it contains multiple syntax errors that prevent it from being parsed.
 // 🔍 Provided JSON File with Errors
 // ============================================
 
-const invalidBookingJSON = `
+const invalidBookingJSON = 
 {
   "hotelName": "Grand City Hotel",
-  "checkInDate": "2024-05-15"
+  "checkInDate": "2024-05-15", 
   "checkOutDate": "2024-05-20",
   "guests": [
     {
-      name: "Alice Johnson",
+      "name": "Alice Johnson",
       "age": 30,
       "email": "alice.johnson@example.com"
     },
     {
       "name": "Bob Smith",
-      "age": undefined,
+      "age": 31,
       "email": "bob.smith@example"
     }
   ],
   "roomDetails": {
     "type": "Suite",
     "pricePerNight": 200,
-    "amenities": ["WiFi", "Breakfast", "Parking",]
+    "amenities": ["WiFi", "Breakfast", "Parking"]
   }
-}
-`;
+};
 
 
 // ============================================
@@ -98,4 +97,11 @@ const invalidBookingJSON = `
 
 4️⃣ What strategies can help you avoid these kinds of errors in the future?
    (e.g., syntax highlighting, linters, writing JSON by example)
+
+   //MY ANSWERS
+   1. No comma on CheckInDate key value pair to indicate the end of a key-value pair
+   2. The invalidBookingJSON variable is wrapped in backticks and I took them out
+   3. The array of guests has a name variable that does not have any quotations around it, so i put double quotations around it
+   4. The age key-value pair for Bob Smith cannot be undefined, so I added age 31
+   5. The end of the amenities array has a comma, indicating that there is another value, but there is nothing. Comma has been taken out
 */
