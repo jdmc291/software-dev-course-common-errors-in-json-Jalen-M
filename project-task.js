@@ -90,14 +90,14 @@ const invalidBookingJSON =
 💬 Reflect and answer the following:
 
 1️⃣ What tools or techniques did you use to identify the errors?
-
+    --I first started with the basic commas at the end of key-value pairs, 
 2️⃣ How did you confirm that your corrected JSON file was valid?
-
+    --Once I was done, I used the JSON validator to confirm my final version
 3️⃣ Which errors were the most difficult to spot? Why?
-
+    --One error that I was unsure about was the age being undefined. I did not know if that was allowed or not. I also did not know if the comma at the end of parking was valid, but it was not
 4️⃣ What strategies can help you avoid these kinds of errors in the future?
    (e.g., syntax highlighting, linters, writing JSON by example)
-
+    --Just practicing more JSON retrieval and practicing writing them. Overall just more exposure to them
    //MY ANSWERS
    1. No comma on CheckInDate key value pair to indicate the end of a key-value pair
    2. The invalidBookingJSON variable is wrapped in backticks and I took them out
